@@ -1,0 +1,30 @@
+.languages{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.languages li{
+    padding: 1rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.languages li::before{
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  width:1rem ;
+  color: aliceblue;
+  filter: invert(1);
+  height: 1rem;
+  background-size: contain;
+  background-image: url('../../assets/img/icons/check.svg'); /*Repara: são DOIS pontinhos (../../), não um!../ = volta uma pasta (css/ → assets/)../ = volta de novo (pra cima de assets, se necessário)*/
+}

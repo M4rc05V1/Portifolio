@@ -1,0 +1,108 @@
+.acordeon{
+    display: flex;
+    flex-direction: column;
+    width:100% ;
+    border:1px solid aliceblue;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    transition: .5s; /*essa função fara com que tenha uma mini animação quando passarmos o mouse pelo botão*/
+}
+.acordeon:hover{/*essa parte  fez com que quando passamos o mouse o botao muda de cor*/
+    background-color: rgba(87, 164, 96, 0.493);
+    border-color: rgb(232, 234, 232);
+}
+.acordeon.open,
+.acordeon .trigger:hover{
+    cursor:pointer ;/*Essa função faz com que fique aquela maozinha quando passar pelo botao*/
+}
+.trigger{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: aliceblue;
+}
+.title{
+    flex-grow: 1;
+    text-align: left;
+}
+
+.portifolio li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.acordeon .trigger{
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem 1rem 2rem;
+    background-color: transparent;
+    color: aliceblue;
+    border:none;
+    justify-content: space-between;
+    align-items:center;
+    width:100% ;
+    
+}
+.acordeon .trigger::after {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url('../img/icons/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+  
+    }
+    .education li{
+        padding: 1rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    align-items: center;
+    }
+
+ .acordeon .icon-arrow{
+    transition:transform 0.2s ease;
+ }    
+
+
+.acordeon .content{
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    padding: 1rem;
+    transition: opacity .35s ease-in-out ;
+}
+
+.acordeon.open .content{
+    display: block;
+    width: 100%;
+    padding:0 1rem 1rem 2rem ;
+    height: auto;
+    opacity: 1;
+
+ }
+
+ .acordeon .open .icon-arrow{
+    transform: rotate(180deg);
+ }
+ 
+
+ .experience h4,
+.experience h5,
+.experience label {
+    display: block;
+    margin: 10px 0;
+    line-height: 1.6;
+}

@@ -1,0 +1,78 @@
+.header{
+    
+        background-color: rgba(0, 0, 0, 0.5); /* fundo translúcido escuro */
+        padding: 2rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+      
+}
+.header .photo{
+    display: block;
+  margin: 0 auto 1rem auto; /* centraliza e adiciona espaço abaixo */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.header .title{
+    text-align: center;
+    font-family:'neue machine' ;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.information p{
+    margin: .5rem;
+}
+.icon-arrow{
+    width: 30px;
+    height: 30px;
+    fill: white;
+    filter: invert(1);
+    object-fit: contain;
+    justify-items: end;
+    transform: rotate(180deg);
+
+    
+
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    filter: invert(1);
+    margin-right: 8px;
+  }
+@media only screen and (min-width:768px){
+
+    .header{
+        display: grid;
+        grid-template-areas:
+        "photo title"
+        "photo information"
+        
+
+}
+body {
+    font-family: 'NueMachine', sans-serif;
+}
+
+.header .photo{
+    grid-area: photo;
+    margin: 0 auto;
+}
+
+.header .title{
+    grid-area: title;
+    text-align: start;
+    max-width: 21 0px;
+}
+.header .information{
+    grid-area:information;
+}
+
+}
