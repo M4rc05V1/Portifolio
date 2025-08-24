@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio | Seu Nome</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header" id="topo">
+    <div class="container nav">
+      <a href="#topo" class="logo">Olá, meu nome é <span>Marcos</span></a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu">
+        <a href="#home" class="menu__link">Início</a>
+        <a href="#sobre" class="menu__link">Sobre</a>
+        <a href="#servicos" class="menu__link">Serviços</a>
+        <a href="#projetos" class="menu__link">Projetos</a>
+        <a href="#contato" class="menu__link btn btn--sm">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero section" id="home" aria-label="Herói">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <p class="eyebrow">Desenvolvedor Front-end</p>
+        <h1>Construo experiências web <span>rápidas</span> e <span>elegantes</span>.</h1>
+        <p class="muted">Especialista em HTML, CSS, JavaScript e frameworks modernos. Vamos tirar sua ideia do papel.</p>
+        <div class="hero__cta">
+          <a href="#projetos" class="btn">Ver projetos</a>
+          <a href="#contato" class="btn btn--ghost">Fale comigo</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <!-- Coloque sua foto 1:1 ou 4:5 -->
+        <img src="/imagens/foto.jpg" alt="Foto de perfil" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="section" id="sobre">
+    <div class="container two-col">
+      <div>
+        <h2>Sobre mim</h2>
+        <p>Sou desenvolvedor focado em criar interfaces acessíveis, responsivas e com alta performance. Adoro transformar designs em produtos reais.</p>
+        <ul class="tags">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li><li>Python</li><li>Next.js</li><li>Node</li><li>MySql</li><li>PHP</li><li>pacote-Office</li><li>Photoshop</li>
+        </ul>
+        <a class="btn btn--sm" href="assets/curriculo.pdf" target="_blank" rel="noopener">Baixar CV</a>
+      </div>
+     <div class="card stats">
+  <div><strong>Gestão & Análise de Sistemas</strong><span>Graduação</span></div>
+  <div><strong>Inglês</strong><span>Intermediário</span></div>
+  <div><strong>Projetos</strong><span>15+ entregues</span></div>
+</div>
+
+  </section>
+
+  <!-- Serviços -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <h2 class="center">Serviços</h2>
+      <div class="grid-3">
+        <article class="card service">
+          <h3>Sites Responsivos</h3>
+          <p>Landing pages e sites institucionais pensados para todos os dispositivos.</p>
+        </article>
+        <article class="card service">
+          <h3>SPAs e Dashboards</h3>
+          <p>Aplicações ricas com integração a APIs e foco em usabilidade.</p>
+        </article>
+        <article class="card service">
+          <h3>Otimização</h3>
+          <p>SEO técnico, performance e acessibilidade para melhores resultados.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <h2 class="center">Projetos em destaque</h2>
+      <div class="projects">
+        <article class="project">
+          <img src="/imagens/Cripto.png" alt="Projeto 1" loading="lazy">
+          <div class="project__info">
+            <h3>Seu Futuro Cripto</h3>
+            <p>Site educativo sobre criptomoedas, com páginas dedicadas a moedas populares como Bitcoin, Ethereum, Solana e outras. O projeto explica conceitos, apresenta gráficos atualizados e indica plataformas seguras para investimento.</p>
+            <div class="project__links">
+              <a href="https://m4rc05v1.github.io/Seu_Futuro_Cripto/" target="_blank" rel="noopener" class="btn btn--sm">Visitar site</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="/imagens/Jordan.png" alt="Projeto 2" loading="lazy">
+          <div class="project__info">
+            <h3>Jordan page</h3>
+            <p>Site temático sobre a marca Jordan, trazendo história, produtos icônicos e uma galeria visual interativa. O layout é moderno, responsivo e pensado para destacar a identidade da marca.</p>
+            <div class="project__links">
+              <a href="https://m4rc05v1.github.io/Pagina-Jordan/" target="_blank" rel="noopener" class="btn btn--sm">Visitar site</a>
+            </div>
+          </div>
+        </article>
+     <article class="project">
+          <img src="/imagens/senha.png" alt="Projeto 2" loading="lazy">
+          <div class="project__info">
+            <h3>Gerador de Senhas</h3>
+            <p>Aplicação web que gera senhas aleatórias e seguras diretamente no navegador. Inclui botão para copiar a senha, design moderno e funcionalidade totalmente front-end, mostrando habilidade em JavaScript e manipulação do DOM.</p>
+            <div class="project__links">
+              <a href="https://m4rc05v1.github.io/Gerador-Senhas/" target="_blank" rel="noopener" class="btn btn--sm">Visitar site</a>
+            </div>
+          </div>
+        </article>
+  </section>
+
+ <section class="section" id="contato">
+  <div class="container two-col">
+    <div>
+      <h2>Vamos conversar</h2>
+      <p>Pronto para iniciar um projeto ou quer tirar uma dúvida? Envie uma mensagem.</p>
+
+      <form id="contact-form" class="form">
+        <div class="form-group">
+          <input type="text" name="user_name" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="user_email" placeholder="Seu e-mail" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Sua mensagem" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:marcosviniciussep@outlook.com">	marcosviniciussep@outlook.com</a></li>
+        <li><strong>Telefone:</strong> <a href="tel:+5515998152756">+55 (15) 99815-2756</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/marcos-vinicius-5249151a2">Meu linkedin</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/M4rc05V1">Meus projetos</a></li>
+        <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/@doidinhodot.i?_t=ZM-8wgasLtqh6s&_r=1">Meus Videos sobre tecnologia</a></li>
+
+        <li><strong>Local:</strong> Tatuí, SP</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="container footer__grid">
+     <p>© <span id="year"></span> Marcos Vinicius. Todos os direitos reservados.</p>
+      <a href="#topo" class="to-top" aria-label="Voltar ao topo">↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
